@@ -20,11 +20,32 @@
 
 }
 
+body{
+    font-family: sans-serif;
+    background-color: var(--white);
+}
 .container{
     width: 1170px;
     margin: 0 auto;
+    padding: 10px;
 }
 
+.flexbox{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+ul li{
+    list-style: none;
+    padding: 5px;
+    
+}
+ul li a{
+    text-decoration: underline;
+}
 /*header*/
 
 header{
@@ -38,6 +59,11 @@ header{
     left: 0;
     z-index: 1000;
 }
+nav img{
+    height: 30px;
+}
+
+
 
 /*footer*/
 
@@ -46,15 +72,118 @@ footer{
     height: 100px;
     background-color: var(--black);
     color: var(--white);
-    position: fixed;
+    /*position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1000;*/
+
 }
 
-/*main*/
-
-main.container{
-    margin-top: 100px;
-}
-
+.container{
+    width: 80%;
+    /* background-color: blue; */
+    text-align: center;
+    margin: auto;
+  }
+  
+  .card-container{
+    width: 33%;
+    display: inline-block;
+    
+  }
+  
+  .card{
+    position: relative;
+    margin-top: 30px;
+    padding: 5px;
+  }
+  
+  .card img{
+    width: 100%;
+  }
+  
+  .card .item-img{
+    display:block;
+  }
+  
+  .card .item-img-b{
+    display: none;
+  }
+  
+  .card:hover .item-img{
+    display:none
+  }
+  
+  .card:hover .item-img-b{
+    display: block;
+  }
+  
+  .heart{
+    position: absolute;
+    right: 5px;
+    top: 5%;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 30px;
+  }
+  
+  label{
+    cursor: pointer;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  input:checked ~ label {
+    color: red;
+  }
+  
+  /* .heart:hover{
+    color:red
+  } */
+  
+  .labels{
+    position: absolute;
+    left: 5px;
+    bottom: 20px;
+    color: white;
+  }
+  
+  .discount{
+    display: inline-block;
+    background-color: red;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  
+  
+  .type{
+    display: inline-block;
+    background-color: green;
+    margin-right: 5px;
+    padding: 5px;
+  } 
+  
+  .description{
+    text-align: left;
+  }
+  
+  .info>*{
+    margin: 5px 0;
+   }
+   
+   .info h5{
+     color: rgb(115, 130, 143);
+     font-weight: lighter;
+   }
+   
+   .price{
+     color: red;
+   }
+   
+   .old-price{
+     text-decoration: line-through;
+     padding-left: 3px;
+   }
+  
