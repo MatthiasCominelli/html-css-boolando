@@ -1,83 +1,121 @@
 /*commons*/
 
-.debug{
-    border: 1px solid black;
-    min-height: 150px;
+:root{
+    --arancione: rgb(255, 145, 0);
+    --nero:black;
+    --bianco:white;
+    --altezzaimg: 500px;
+    --altezzadiv: 555px;
+    --widthdiv: 350px;
+    --twitter: #36A1F2;
+    --facebock: #4867AB;
+    --instagram:  rgba(131,58,180,1);
 }
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-:root{
-    --orange: #ff6900;
-    --white: #ffffff;
-    --black: #1a1a1a;
-    --red: red;
-    --green: green;
-
-}
-
-body{
-    font-family: sans-serif;
-    background-color: var(--white);
-}
 .container{
-    width: 1170px;
-    margin: 0 auto;
-    padding: 10px;
+    width: 80%;
+    margin: auto;
+    padding-top: 5px;
 }
-
-.flexbox{
+header{
+    background-color: var(--arancione);
+}
+nav{
+    position: static;
+    height: 50px;
+}
+ul{
     display: flex;
-    flex-flow: row nowrap;
+    list-style-type: none;
+}
+li{
+    margin-right: 10px;
+}
+a{
+    color: var(--bianco);
+    text-decoration: none;
+}
+nav div a:nth-of-type(2){
+    padding: 0 20px;
+}
+nav.flex{
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-
-ul li{
-    list-style: none;
-    padding: 5px;
-    
-}
-ul li a{
-    text-decoration: underline;
+nav img{
+    width: 150px;
 }
 /*header*/
 
-header{
-    width: 100%;
-    height: 70px;
-    background-color: var(--orange);
-    color: var(--white);
-    box-shadow: 0 1px 3px #666;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-nav img{
-    height: 30px;
-}
 
+/* footer */
 
-
-/*footer*/
-
-footer{
-    width: 100%;
-    height: 100px;
+.foot-container{
     background-color: var(--black);
-    color: var(--white);
-    /*position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;*/
+    width: 100%;
+    height: 150px;
+    vertical-align: middle;
+    padding: 40px 100px;
+    margin: 0 auto;
 
 }
+
+.flexfoot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+h5{
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer nav  ul li a {
+    color: white;
+    padding-inline-end: 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.fa-brands{
+    font-size: 18px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+.fa-square-twitter:hover{
+    color: var(--twitter);
+}
+
+.fa-square-facebook:hover{
+    color: var(--facebock);
+}
+
+.fa-square-instagram:hover{
+    color: var(--instagram);
+}
+
+.fa-square-pinterest:hover{
+    color: var(--red);
+}
+
+.fa-square-youtube:hover{
+    color: var(--red);
+}
+
+
 
 .container{
     width: 80%;
